@@ -1910,3 +1910,21 @@ button:not(.nav-btn) {
     border: 2px solid var(--border-color);
     box-shadow: var(--shadow);
 }
+
+.fc-action-btn:hover {
+    background: linear-gradient(180deg, rgba(0,0,0,0.02), rgba(0,0,0,0.01));
+    border-color: var(--primary-color);
+    transform: translateY(-2px);
+}  
+.fc-action-btn:active {
+    box-shadow: none;
+    transform: translateY(0);
+}
+.fc-action-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    transform: none;
+}
+.fc-action-incorrect {
+    background: var(--bg-white);
+}

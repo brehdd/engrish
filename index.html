@@ -649,6 +649,16 @@
                             <input type="text" id="write-input" class="write-input" placeholder="Type your answer here...">
                             <div id="write-feedback" class="write-feedback hidden"></div>
                         </div>
+                        <div class="write-stats-mini">
+                            <div class="write-stat-box">
+                                <span class="write-stat-label">Correct</span>
+                                <span class="write-stat-value" id="write-correct-count">0</span>
+                            </div>
+                            <div class="write-stat-box">
+                                <span class="write-stat-label">Total</span>
+                                <span class="write-stat-value" id="write-total-count">0</span>
+                            </div>
+                        </div>
                         <div class="write-buttons">
                             <button class="btn btn-primary" id="write-submit-btn">Check Answer</button>
                             <button class="btn btn-secondary" id="write-skip-btn">Skip</button>
@@ -728,6 +738,11 @@
                     <div class="progress-section">
                         <h3>🎯 Weak Areas</h3>
                         <div id="weak-areas-list"></div>
+                    </div>
+
+                    <div class="progress-container">
+                        <h3>🏆 Achievements</h3>
+                        <div id="achievements-list" class="achievements-list"></div>
                     </div>
                 </div>
             </section>
